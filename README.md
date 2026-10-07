@@ -1,574 +1,286 @@
-\# 🛒 Olist E-commerce Analytics
-
-
+# 🛒 Olist E-commerce Analytics
 
 > End-to-end e-commerce analytics project based on the Brazilian Olist marketplace dataset.
 
-
-
 This project demonstrates an end-to-end data analytics workflow — from database design and SQL analysis to exploratory data analysis in Python and interactive dashboards in Power BI.
 
+The project focuses on **sales, customers, products, delivery performance, sellers and customer reviews**.
 
+---
 
-The project focuses on \*\*sales, customers, products, delivery performance, sellers and customer reviews\*\*.
-
-
-
-\---
-
-
-
-\## 🎯 Project Goals
-
-
+## 🎯 Project Goals
 
 The main objective is to analyze the Olist e-commerce dataset and identify patterns that can support business decision-making.
 
-
-
 The project answers questions such as:
 
+* 📈 How do sales and order volumes change over time?
+* 🛍️ Which product categories generate the most revenue?
+* 👥 How many customers make repeat purchases?
+* 🌎 Which Brazilian states generate the most orders?
+* 🚚 Which regions have the longest delivery times?
+* ⭐ How does delivery performance affect customer satisfaction?
+* 🏪 Which sellers demonstrate the best and worst performance?
+* 💰 What factors are associated with higher order value?
 
+---
 
-\* 📈 How do sales and order volumes change over time?
-
-\* 🛍️ Which product categories generate the most revenue?
-
-\* 👥 How many customers make repeat purchases?
-
-\* 🌎 Which Brazilian states generate the most orders?
-
-\* 🚚 Which regions have the longest delivery times?
-
-\* ⭐ How does delivery performance affect customer satisfaction?
-
-\* 🏪 Which sellers demonstrate the best and worst performance?
-
-\* 💰 What factors are associated with higher order value?
-
-
-
-\---
-
-
-
-\## 🧰 Tech Stack
-
-
+## 🧰 Tech Stack
 
 | Technology                  | Purpose                              |
-
 | --------------------------- | ------------------------------------ |
+| 🐍 **Python**               | Data preparation, EDA and analysis   |
+| 🐼 **Pandas**               | Data manipulation and transformation |
+| 🔢 **NumPy**                | Numerical calculations               |
+| 📊 **Matplotlib / Seaborn** | Data visualization                   |
+| 🗄️ **PostgreSQL**          | Database and SQL analytics           |
+| 🔎 **SQL**                  | Data analysis and business queries   |
+| 📈 **Power BI**             | Interactive dashboards               |
+| 📐 **DAX**                  | Analytical measures                  |
+| 🔧 **Git / GitHub**         | Version control                      |
 
-| 🐍 \*\*Python\*\*               | Data preparation, EDA and analysis   |
+---
 
-| 🐼 \*\*Pandas\*\*               | Data manipulation and transformation |
-
-| 🔢 \*\*NumPy\*\*                | Numerical calculations               |
-
-| 📊 \*\*Matplotlib / Seaborn\*\* | Data visualization                   |
-
-| 🗄️ \*\*PostgreSQL\*\*          | Database and SQL analytics           |
-
-| 🔎 \*\*SQL\*\*                  | Data analysis and business queries   |
-
-| 📈 \*\*Power BI\*\*             | Interactive dashboards               |
-
-| 📐 \*\*DAX\*\*                  | Analytical measures                  |
-
-| 🔧 \*\*Git / GitHub\*\*         | Version control                      |
-
-
-
-\---
-
-
-
-\## 🗂️ Project Structure
-
-
+## 🗂️ Project Structure
 
 ```text
-
 olist-ecommerce-analytics/
-
 │
-
 ├── 📁 data/
-
 │   └── README.md
-
 │
-
 ├── 📁 database/
-
 │   ├── 📁 images/
-
-│   │   └── db\_schema.png
-
+│   │   └── db_schema.png
 │   └── 📁 schema/
-
-│       ├── 01\_tables\_creation.sql
-
-│       ├── 02\_constraints.sql
-
-│       └── 03\_indexes.sql
-
+│       ├── 01_tables_creation.sql
+│       ├── 02_constraints.sql
+│       └── 03_indexes.sql
 │
-
 ├── 📁 notebooks/
-
-│   ├── 01\_data\_preparation.ipynb
-
-│   ├── 02\_eda.ipynb
-
-│   └── 03\_analysis.ipynb
-
+│   ├── 01_data_preparation.ipynb
+│   ├── 02_eda.ipynb
+│   └── 03_analysis.ipynb
 │
-
 ├── 📁 sql/
-
-│   ├── 01\_data\_quality.sql
-
-│   ├── 02\_sales\_analysis.sql
-
-│   ├── 03\_customer\_analysis.sql
-
-│   ├── 04\_product\_analysis.sql
-
-│   ├── 05\_delivery\_analysis.sql
-
-│   └── 06\_reviews\_analysis.sql
-
+│   ├── 01_data_quality.sql
+│   ├── 02_sales_analysis.sql
+│   ├── 03_customer_analysis.sql
+│   ├── 04_product_analysis.sql
+│   ├── 05_delivery_analysis.sql
+│   └── 06_reviews_analysis.sql
 │
-
 ├── 📄 README.md
-
 ├── 📄 requirements.txt
-
 └── 📄 .gitignore
-
 ```
 
+---
 
+## 🗄️ Database
 
-\---
-
-
-
-\## 🗄️ Database
-
-
-
-The project uses \*\*PostgreSQL\*\* as the analytical database.
-
-
+The project uses **PostgreSQL** as the analytical database.
 
 The database schema was designed to represent the main entities of the Olist marketplace:
 
+* 👤 Customers
+* 🛒 Orders
+* 📦 Order items
+* 💳 Payments
+* ⭐ Reviews
+* 🏷️ Products
+* 🏪 Sellers
+* 🌎 Geolocation
 
+### Database Schema
 
-\* 👤 Customers
-
-\* 🛒 Orders
-
-\* 📦 Order items
-
-\* 💳 Payments
-
-\* ⭐ Reviews
-
-\* 🏷️ Products
-
-\* 🏪 Sellers
-
-\* 🌎 Geolocation
-
-
-
-\### Database Schema
-
-
-
-!\[Database Schema](database/images/db\_schema.png)
-
-
+![Database Schema](database/images/db_schema.png)
 
 The database setup scripts include:
 
+* table creation;
+* primary and foreign keys;
+* constraints;
+* indexes for frequently used columns.
 
+---
 
-\* table creation;
-
-\* primary and foreign keys;
-
-\* constraints;
-
-\* indexes for frequently used columns.
-
-
-
-\---
-
-
-
-\## 🔎 SQL Analysis
-
-
+## 🔎 SQL Analysis
 
 The SQL section contains analytical queries grouped by business domain.
 
+### 📊 Data Quality
 
+`01_data_quality.sql`
 
-\### 📊 Data Quality
+* missing values;
+* duplicate records;
+* uniqueness checks;
+* data consistency checks.
 
+### 💰 Sales Analysis
 
+`02_sales_analysis.sql`
 
-`01\_data\_quality.sql`
+* total revenue;
+* monthly sales dynamics;
+* order volume;
+* average order value;
+* top categories and products.
 
+### 👥 Customer Analysis
 
+`03_customer_analysis.sql`
 
-\* missing values;
+* customers by state;
+* orders per customer;
+* customer spending;
+* repeat customers;
+* customer segmentation.
 
-\* duplicate records;
+### 🏷️ Product Analysis
 
-\* uniqueness checks;
+`04_product_analysis.sql`
 
-\* data consistency checks.
+* category performance;
+* product rankings;
+* revenue contribution;
+* cumulative revenue share;
+* ABC analysis.
 
+### 🚚 Delivery Analysis
 
+`05_delivery_analysis.sql`
 
-\### 💰 Sales Analysis
+* delivery time;
+* delivery delays;
+* late delivery rate;
+* regional delivery performance.
 
+### ⭐ Reviews Analysis
 
+`06_reviews_analysis.sql`
 
-`02\_sales\_analysis.sql`
-
-
-
-\* total revenue;
-
-\* monthly sales dynamics;
-
-\* order volume;
-
-\* average order value;
-
-\* top categories and products.
-
-
-
-\### 👥 Customer Analysis
-
-
-
-`03\_customer\_analysis.sql`
-
-
-
-\* customers by state;
-
-\* orders per customer;
-
-\* customer spending;
-
-\* repeat customers;
-
-\* customer segmentation.
-
-
-
-\### 🏷️ Product Analysis
-
-
-
-`04\_product\_analysis.sql`
-
-
-
-\* category performance;
-
-\* product rankings;
-
-\* revenue contribution;
-
-\* cumulative revenue share;
-
-\* ABC analysis.
-
-
-
-\### 🚚 Delivery Analysis
-
-
-
-`05\_delivery\_analysis.sql`
-
-
-
-\* delivery time;
-
-\* delivery delays;
-
-\* late delivery rate;
-
-\* regional delivery performance.
-
-
-
-\### ⭐ Reviews Analysis
-
-
-
-`06\_reviews\_analysis.sql`
-
-
-
-\* review score distribution;
-
-\* average review score;
-
-\* relationship between delivery delays and customer satisfaction.
-
-
+* review score distribution;
+* average review score;
+* relationship between delivery delays and customer satisfaction.
 
 SQL techniques used in the project include:
 
+`JOIN` · `GROUP BY` · `CASE WHEN` · `CTE` · `DATE_TRUNC` · `LAG` · `ROW_NUMBER` · `RANK` · Window Functions · Subqueries
 
+---
 
-`JOIN` · `GROUP BY` · `CASE WHEN` · `CTE` · `DATE\_TRUNC` · `LAG` · `ROW\_NUMBER` · `RANK` · Window Functions · Subqueries
-
-
-
-\---
-
-
-
-\## 🐍 Python Analysis
-
-
+## 🐍 Python Analysis
 
 The Python analysis is divided into several notebooks.
 
+### 1️⃣ Data Preparation
 
+`01_data_preparation.ipynb`
 
-\### 1️⃣ Data Preparation
+* loading raw datasets;
+* data type conversion;
+* missing value analysis;
+* duplicate detection;
+* data validation;
+* feature creation;
+* preparation of analytical datasets.
 
+### 2️⃣ Exploratory Data Analysis
 
-
-`01\_data\_preparation.ipynb`
-
-
-
-\* loading raw datasets;
-
-\* data type conversion;
-
-\* missing value analysis;
-
-\* duplicate detection;
-
-\* data validation;
-
-\* feature creation;
-
-\* preparation of analytical datasets.
-
-
-
-\### 2️⃣ Exploratory Data Analysis
-
-
-
-`02\_eda.ipynb`
-
-
+`02_eda.ipynb`
 
 Exploration of:
 
+* 📈 sales dynamics;
+* 🛍️ product categories;
+* 👥 customers;
+* 🌎 geography;
+* 🚚 delivery performance;
+* ⭐ customer reviews.
 
+### 3️⃣ Business Analysis
 
-\* 📈 sales dynamics;
-
-\* 🛍️ product categories;
-
-\* 👥 customers;
-
-\* 🌎 geography;
-
-\* 🚚 delivery performance;
-
-\* ⭐ customer reviews.
-
-
-
-\### 3️⃣ Business Analysis
-
-
-
-`03\_analysis.ipynb`
-
-
+`03_analysis.ipynb`
 
 The final analytical notebook focuses on business questions and includes:
 
+* sales dynamics;
+* ABC analysis of product categories;
+* repeat customer analysis;
+* delivery performance by state;
+* delivery delays vs review scores;
+* seller performance.
 
+---
 
-\* sales dynamics;
-
-\* ABC analysis of product categories;
-
-\* repeat customer analysis;
-
-\* delivery performance by state;
-
-\* delivery delays vs review scores;
-
-\* seller performance.
-
-
-
-\---
-
-
-
-\## 📊 Power BI Dashboard
-
-
+## 📊 Power BI Dashboard
 
 The Power BI dashboard provides an interactive overview of the Olist marketplace.
 
-
-
 Planned dashboard metrics include:
 
+* 💰 Total Revenue
+* 🛒 Total Orders
+* 👥 Total Customers
+* 🏪 Total Sellers
+* 💵 Average Order Value
+* ⭐ Average Review Score
+* 📈 Revenue dynamics
+* 🏷️ Top product categories
+* 🌎 Orders by state
+* 🚚 Delivery performance
+* ⭐ Review distribution
 
-
-\* 💰 Total Revenue
-
-\* 🛒 Total Orders
-
-\* 👥 Total Customers
-
-\* 🏪 Total Sellers
-
-\* 💵 Average Order Value
-
-\* ⭐ Average Review Score
-
-\* 📈 Revenue dynamics
-
-\* 🏷️ Top product categories
-
-\* 🌎 Orders by state
-
-\* 🚚 Delivery performance
-
-\* ⭐ Review distribution
-
-
-
-\### Dashboard Preview
-
-
+### Dashboard Preview
 
 > 🚧 Dashboard is currently under development.
 
+---
 
-
-\---
-
-
-
-\## 💡 Key Insights
-
-
+## 💡 Key Insights
 
 > 🚧 This section will be updated after the final analysis.
 
-
-
 The final version will contain the main business findings discovered during the analysis, supported by SQL queries, Python visualizations and Power BI dashboards.
 
+---
 
+## 📦 Dataset
 
-\---
-
-
-
-\## 📦 Dataset
-
-
-
-The project is based on the \*\*Brazilian E-Commerce Public Dataset by Olist\*\*.
-
-
+The project is based on the **Brazilian E-Commerce Public Dataset by Olist**.
 
 The original CSV files are not stored in this repository because of their size.
 
+See [`data/README.md`](data/README.md) for instructions on downloading and preparing the dataset.
 
+---
 
-See \[`data/README.md`](data/README.md) for instructions on downloading and preparing the dataset.
-
-
-
-\---
-
-
-
-\## 🚀 Project Status
-
-
+## 🚀 Project Status
 
 | Stage                 | Status         |
-
 | --------------------- | -------------- |
-
 | 🗄️ Database schema   | ✅ Completed    |
-
 | 🔎 SQL analysis       | ✅ Completed    |
-
 | 🐍 Data preparation   | ✅ Completed    |
-
 | 📊 EDA                | ✅ Completed    |
-
 | 📈 Business analysis  | ✅ Completed    |
-
 | 📊 Power BI dashboard | 🚧 In progress |
-
 | 📝 Final insights     | 🚧 In progress |
 
+---
 
+## 👨‍💻 Author
 
-\---
-
-
-
-\## 👨‍💻 Author
-
-
-
-\*\*Daniil Rokunov\*\*
-
-
+**Daniil Rokunov**
 
 Data Analytics / BI enthusiast with an engineering background.
 
-
-
 Interested in:
-
-
 
 `Data Analytics` · `BI` · `SQL` · `Python` · `Data Engineering` · `Machine Learning`
 
-
-
-\---
-
-
+---
 
 ⭐ If you find this project interesting, feel free to explore the notebooks and SQL analysis.
-
-
-
