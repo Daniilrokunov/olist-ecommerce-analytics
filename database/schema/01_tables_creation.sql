@@ -63,7 +63,6 @@ CREATE TABLE reviews (
     review_creation_date TIMESTAMP NOT NULL,
     review_answer_timestamp TIMESTAMP NOT NULL,
     PRIMARY KEY (review_id, order_id)
---делаем составной первичный ключ
 );
 CREATE TABLE geolocation (
     geolocation_id serial not null,
