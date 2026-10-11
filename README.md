@@ -46,23 +46,35 @@ The project answers questions such as:
 ```text
 olist-ecommerce-analytics/
 │
-├── 📁 data/
-│   └── README.md
+├── data/
+│   ├── README.md
+│   ├── olist_customers_dataset.csv
+│   ├── olist_geolocation_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_order_reviews_dataset.csv
+│   ├── olist_orders_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   └── product_category_name_translation.csv
 │
-├── 📁 database/
-│   ├── 📁 images/
+├── database/
+│   ├── images/
 │   │   └── db_schema.png
-│   └── 📁 schema/
+│   └── schema/
 │       ├── 01_tables_creation.sql
 │       ├── 02_constraints.sql
 │       └── 03_indexes.sql
 │
-├── 📁 notebooks/
+├── dashboards/
+│   └── sales_overview.pbix
+│
+├── notebooks/
 │   ├── 01_data_preparation.ipynb
 │   ├── 02_eda.ipynb
 │   └── 03_analysis.ipynb
 │
-├── 📁 sql/
+├── sql/
 │   ├── 01_data_quality.sql
 │   ├── 02_sales_analysis.sql
 │   ├── 03_customer_analysis.sql
@@ -70,9 +82,9 @@ olist-ecommerce-analytics/
 │   ├── 05_delivery_analysis.sql
 │   └── 06_reviews_analysis.sql
 │
-├── 📄 README.md
-├── 📄 requirements.txt
-└── 📄 .gitignore
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ---
