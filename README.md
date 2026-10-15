@@ -1,8 +1,8 @@
-# 📊 Olist E-commerce Analytics
-
-> End-to-end e-commerce analytics project based on the Brazilian Olist marketplace dataset.
+# 📊 Olist E-commerce Analytics | Анализ продаж маркетплейса Olist
 
 [en English](#english) | [🇷🇺 Русский](#русский)
+
+> End-to-end e-commerce analytics project based on the Brazilian Olist marketplace dataset.
 
 <a id="english"></a>
 ## en English
@@ -215,7 +215,7 @@ The Power BI dashboard provides an interactive overview of the Olist marketplace
 
 ### Dashboard Preview
 
-![Dashboard preview] (dashboards/sales_overview_dashboard.png)
+![Dashboard preview] (\dashboards\sales_overview_dashboard.png)
 
 ---
 
