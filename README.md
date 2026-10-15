@@ -109,7 +109,7 @@ The database schema was designed to represent the main entities of the Olist mar
 
 ### Database Schema
 
-![Database Schema](dashboards/sales_overview_dashboard.png)
+![Database Schema](dashboards/sales_overview_dashboard_en.png)
 
 The database setup scripts include:
 
@@ -420,4 +420,4 @@ olist-ecommerce-analytics/
 
 ### Превью дашборда
 
-![Превью дашборда](dashboards/sales_overview_dashboard.png)
+![Превью дашборда](dashboards/sales_overview_dashboard_ru.png)
