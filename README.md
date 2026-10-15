@@ -71,7 +71,8 @@ olist-ecommerce-analytics/
 │
 ├── dashboards/
 │   ├── sales_overview.pbix
-│   └── sales_overview_dashboard.png
+│   ├── sales_overview_dashboard_en.png
+│   └── sales_overview_dashboard_ru.png
 │
 ├── notebooks/
 │   ├── 01_data_preparation.ipynb
@@ -286,7 +287,8 @@ olist-ecommerce-analytics/
 │
 ├── dashboards/
 │   ├── sales_overview.pbix
-│   └── sales_overview_dashboard.png
+│   ├── sales_overview_dashboard_en.png
+│   └── sales_overview_dashboard_ru.png
 │
 ├── notebooks/
 │   ├── 01_data_preparation.ipynb
