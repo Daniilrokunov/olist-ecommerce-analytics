@@ -2,8 +2,7 @@
 
 > End-to-end e-commerce analytics project based on the Brazilian Olist marketplace dataset.
 
-## English 
-## Русский
+[English] | [Русский]
 
 ## English
 
