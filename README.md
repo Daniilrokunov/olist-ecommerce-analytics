@@ -2,11 +2,9 @@
 
 > End-to-end e-commerce analytics project based on the Brazilian Olist marketplace dataset.
 
-🇺🇸 en English | ru Русский
+## English | ## Русский
 
-<a id="English"></a>
-
-:us: English
+## English
 
 This project demonstrates an end-to-end data analytics workflow — from database design and SQL analysis to exploratory data analysis in Python and interactive dashboards in Power BI.
 
