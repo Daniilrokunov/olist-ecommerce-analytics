@@ -109,7 +109,7 @@ The database schema was designed to represent the main entities of the Olist mar
 
 ### Database Schema
 
-![Database Schema](database/images/db_schema.png)
+![Database Schema](dashboards/sales_overview_dashboard.png)
 
 The database setup scripts include:
 
@@ -246,12 +246,12 @@ The Power BI dashboard provides an interactive overview of the Olist marketplace
 
 ## 🧰 Технический стек
 
-| Инструмент                       | Для чего используется                              |
+| Инструмент                       | Для чего используется            |
 | --------------------------- | ------------------------------------ |
-| 🐍 **Python**               | Подготовка, исследовательский анализ |
+| 🐍 **Python**               | Подготовка, разведочный анализ |
 | 🐼 **Pandas**               | Трансформация данных                 |
 | 🔢 **NumPy**                | Математические вычисления            |
-| 📊 **Matplotlib / Seaborn** | Визуавлизация данных                 |
+| 📊 **Matplotlib / Seaborn** | Визуализация данных                 |
 | 🔎 **SQL**                  | Запросы к базе данных                |
 | 📈 **Power BI**             | Дашборды                             |
 | 📐 **DAX**                  | Аналитические меры                   |
@@ -420,4 +420,4 @@ olist-ecommerce-analytics/
 
 ### Превью дашборда
 
-![Превью дашборда] (dashboards/sales_overview_dashboard.png)
+![Превью дашборда](dashboards/sales_overview_dashboard.png)
