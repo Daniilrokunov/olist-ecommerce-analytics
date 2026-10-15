@@ -1,8 +1,9 @@
-# 🛒 Olist E-commerce Analytics
+# 📊 Olist E-commerce Analytics
 
 > End-to-end e-commerce analytics project based on the Brazilian Olist marketplace dataset.
 
-## English | ## Русский
+## English 
+## Russian
 
 ## English
 
