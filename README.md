@@ -216,7 +216,7 @@ The Power BI dashboard provides an interactive overview of the Olist marketplace
 
 ### Dashboard Preview
 
-![Dashboard preview](\dashboards\sales_overview_dashboard.png)
+![Dashboard preview](\dashboards\sales_overview_dashboard_en.png)
 
 ---
 
