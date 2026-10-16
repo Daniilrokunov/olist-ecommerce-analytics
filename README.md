@@ -148,9 +148,7 @@ The SQL section contains analytical queries grouped by business domain.
 
 * category performance;
 * product rankings;
-* revenue contribution;
-* cumulative revenue share;
-* ABC analysis.
+* revenue contribution.
 
 ### 🚚 Delivery Analysis
 
@@ -171,7 +169,7 @@ The SQL section contains analytical queries grouped by business domain.
 
 SQL techniques used in the project include:
 
-`JOIN` · `GROUP BY` · `CASE WHEN` · `CTE` · `DATE_TRUNC` · `LAG` · `ROW_NUMBER` · `RANK` · Window Functions · Subqueries
+`JOIN` · `GROUP BY` · `CASE WHEN` · `CTE` · `DATE_TRUNC` · `LAG` · `ROW_NUMBER` · `RANK` · `Window Functions` · `Subqueries`
 
 ---
 
@@ -218,17 +216,17 @@ The Power BI dashboard provides an interactive overview of the Olist marketplace
 
 
 <a id="Русский"></a>
-# 📊 Анализ данных о продажах маркетплейса Olist
+# 📊 Анализ данных продаж маркетплейса Olist
 
-Этот проект демонстрирует полный цикл аналитики данных: от проектирования базы данных и анализа с помощью SQL до разведочного анализа данных (EDA) на Python и создания интерактивных дашбордов в Power BI.
+Этот проект демонстрирует полный цикл аналитики данных: от проектирования базы данных и анализа с помощью SQL до разведочного анализа данных (EDA) на Python и создания интерактивных дашбордов в Power BI
 
-В центре внимания проекта — **продажи, клиенты, товары, показатели доставки, продавцы и отзывы покупателей**.
+В центре внимания проекта — **продажи, клиенты, товары, показатели доставки, продавцы и отзывы покупателей**
 
 ---
 
 ## 🎯 Цели проекта
 
-Основная задача — проанализировать набор данных платформы электронной коммерции Olist и выявить закономерности, которые помогут в принятии бизнес-решений.
+Основная задача — проанализировать данные продаж платформы Olist и выявить закономерности, которые помогут в принятии бизнес-решений
 
 Проект дает ответы на следующие вопросы:
 
@@ -381,7 +379,7 @@ olist-ecommerce-analytics/
 
 Используемые функции SQL:
 
-`JOIN` · `GROUP BY` · `CASE WHEN` · `CTE` · `DATE_TRUNC` · `LAG` · `ROW_NUMBER` · `RANK` · Оконные функции · Подзапросы
+`JOIN` · `GROUP BY` · `CASE WHEN` · `CTE` · `DATE_TRUNC` · `LAG` · `ROW_NUMBER` · `RANK` · `Оконные функции` · `Подзапросы`
 
 ---
 
