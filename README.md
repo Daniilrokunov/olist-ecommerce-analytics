@@ -1,9 +1,6 @@
-# 📊 Olist E-commerce Analytics | Анализ продаж маркетплейса Olist
-
 [en English](#english) | [🇷🇺 Русский](#русский)
 
-> End-to-end e-commerce analytics project based on the Brazilian Olist marketplace dataset.
-
+# 📊 Olist E-commerce Analytics 
 <a id="english"></a>
 
 This project demonstrates an end-to-end data analytics workflow — from database design and SQL analysis to exploratory data analysis in Python and interactive dashboards in Power BI.
@@ -109,7 +106,7 @@ The database schema was designed to represent the main entities of the Olist mar
 
 ### Database Schema
 
-![Database Schema](dashboards/sales_overview_dashboard_en.png)
+![Database Schema](database/images/db_schema.png)
 
 The database setup scripts include:
 
@@ -215,12 +212,13 @@ The Power BI dashboard provides an interactive overview of the Olist marketplace
 
 ### Dashboard Preview
 
-![Dashboard preview](\dashboards\sales_overview_dashboard_en.png)
+![Dashboard preview](dashboards/sales_overview_dashboard_en.png)
 
 ---
 
 
 <a id="Русский"></a>
+# 📊 Анализ данных о продажах маркетплейса Olist
 
 Этот проект демонстрирует полный цикл аналитики данных: от проектирования базы данных и анализа с помощью SQL до разведочного анализа данных (EDA) на Python и создания интерактивных дашбордов в Power BI.
 
